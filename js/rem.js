@@ -13,8 +13,8 @@
         };
 
     if (!doc.addEventListener) return;
+    recalc();
     win.addEventListener(resizeEvt, recalc, false);
-    doc.addEventListener('DOMContentLoaded', recalc, false);
 })(document, window);
 
 
