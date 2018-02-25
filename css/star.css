@@ -637,14 +637,7 @@ body {
     }
 }
 
-@keyframes ballon1 {
-    0% {
-        transform: translateY(13rem);
-    }
-    100% {
-        transform: translateY(0rem);
-    }
-}
+
 
 #seven.active .car {
     width: 4.34rem;
@@ -709,7 +702,14 @@ body {
     z-index: 99;
     transform: translateY(13rem);
 }
-
+@keyframes ballon1 {
+    0% {
+        transform: translateY(13rem);
+    }
+    100% {
+        transform: translateY(0rem);
+    }
+}
 #nine.active .ballon2 {
     width: 1.19rem;
     height: 1.4rem;

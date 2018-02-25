@@ -550,3 +550,115 @@ body {
     animation: wheels8 10s linear infinite;
 }
 /* four */
+#fivebox{
+    width:7.5rem;
+    height:100%;
+    /*position: absolute;*/
+    /*left:36.3rem;*/
+    /*top:0;*/
+    background-image: url("../images/bg_07.png");
+    background-size: cover;
+    background-position: center;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    /*opacity: 0;*/
+    transition: 1s;
+}
+#fivebox.swiper-slide-active #five{
+    transform: rotate(360deg) scale(4,4);
+}
+/* five */
+#six{
+    width:7.5rem;
+    height:100%;
+}
+#six > div{
+    width: 25%;
+    height:100%;
+    background-size: 100% 100%;
+    float: left;
+    /*opacity: 0;*/
+}
+#six > div:nth-of-type(1){
+    background-image: url("../images/bg_081.png");
+    transform: translateY(-100%);
+}
+#six > div:nth-of-type(2){
+    background-image: url("../images/bg_082.png");
+    transform: translateY(100%);
+}
+#six > div:nth-of-type(3){
+    background-image: url("../images/bg_083.png");
+    transform: translateY(-100%);
+}
+#six > div:nth-of-type(4){
+    background-image: url("../images/bg_084.png");
+    transform: translateY(100%);
+}
+
+#six.swiper-slide-active > div:nth-of-type(1) , #six.swiper-slide-active > div:nth-of-type(3){
+    animation: sdown 3s linear forwards 1s;
+}
+#six.swiper-slide-active > div:nth-of-type(2) , #six.swiper-slide-active > div:nth-of-type(4){
+    animation: sup 3s linear forwards 1s;
+}
+
+@keyframes sdown {
+    from{
+        /*opacity: 0;*/
+        transform: translateY(-100%);
+    }
+    to{
+        /*opacity: 1;*/
+        transform: translateY(0);
+    }
+}
+@keyframes sup {
+    from{
+        /*opacity: 0;*/
+        transform: translateY(100%);
+    }
+    to{
+        /*opacity: 1;*/
+        transform: translateY(0);
+    }
+}
+/* six */
+#seven{
+    width: 7.5rem;
+    height: 100%;
+    position: relative;
+    flex: none;
+    background-image: url("../images/bg_09.png");
+    background-position: center;
+    background-size: cover;
+}
+
+@keyframes car {
+    0% {
+        transform: translateX(0.5rem) scale(1, 1);
+    }
+    15% {
+        transform: translateX(0.5rem) scale(1.1, 1.1);
+    }
+    30% {
+        transform: translateX(0.5rem) scale(1, 1);
+    }
+    100% {
+        transform: translateX(7.5rem);
+    }
+}
+
+
+
+#seven.swiper-slide-active .car {
+    width: 4.34rem;
+    height: 2.24rem;
+    position: absolute;
+    left: 0;
+    bottom: 0.96rem;
+    background: url("../images/car.png") no-repeat;
+    background-size: contain;
+    animation: car 2s ease-in 1 forwards;
+}
+/* seven  */
