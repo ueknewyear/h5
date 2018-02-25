@@ -662,3 +662,231 @@ body {
     animation: car 2s ease-in 1 forwards;
 }
 /* seven  */
+#eight{
+    width: 7.5rem;
+    height: 100%;
+    background-image: url("../images/bg_13.png");
+    background-size: 7.5rem 100%;
+
+}
+/* eight */
+#nine{
+    width: 7.5rem;
+    height: 100%;
+    position: relative;
+    flex: none;
+    background-image: url("../images/bg_11.png");
+    background-position: center;
+    background-size: cover;
+}
+#nine.swiper-slide-active > .lights {
+    width: 4.91rem;
+    height: 0;
+    background-image: url(../images/light.png);
+    background-position: top center;
+    background-size: 100%;
+    position: absolute;
+    left: 1.1rem;
+    top: 5.41rem;
+    animation: lightShow 1s linear 1s forwards;
+}
+
+@keyframes lightShow {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 4.52rem;
+    }
+}
+/* nine */
+#ten{
+    width: 7.5rem;
+    height: 100%;
+    position: relative;
+    flex: none;
+    background-image: url("../images/bg_12.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.bulb {
+    width:.42rem;
+    height: .42rem;
+    background: red;
+    position: absolute;
+    border-radius: 50%;
+}
+@keyframes bulbShow1 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes bulbShow2 {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.bulb:nth-child(1){
+    left:.26rem;
+    top:10.15rem;
+}
+.bulb:nth-child(2){
+    left:.26rem;
+    top:8.82rem;
+}
+.bulb:nth-child(3){
+    left:.36rem;
+    top:7.53rem;
+}
+.bulb:nth-child(4){
+    left:.4rem;
+    top:6rem;
+}
+.bulb:nth-child(5){
+    left:.56rem;
+    top:4.49rem;
+}
+.bulb:nth-child(6){
+    left:1.13rem;
+    top:2.83rem;
+}
+.bulb:nth-child(7){
+    left:2.28rem;
+    top:1.17rem;
+}
+.bulb:nth-child(8){
+    left:3.54rem;
+    top:.59rem;
+}
+.bulb:nth-child(9){
+    right:2.28rem;
+    top:1.17rem;
+}
+.bulb:nth-child(10){
+    right:1.13rem;
+    top:2.83rem;
+}
+.bulb:nth-child(11){
+    right:.56rem;
+    top:4.49rem;
+}
+.bulb:nth-child(12){
+    right:.4rem;
+    top:6rem;
+}
+.bulb:nth-child(13){
+    right:.36rem;
+    top:7.53rem;
+}
+.bulb:nth-child(14){
+    right:.26rem;
+    top:8.82rem;
+}
+.bulb:nth-child(15){
+    right:.26rem;
+    top:10.15rem;
+}
+.bulb:nth-child(3n-2){
+    background:#e37d7d;
+    box-shadow:0 0 10px #e37d7d;
+}
+.bulb:nth-child(3n-1){
+    background:#7de3e3;
+    box-shadow:0 0 10px #7de3e3;
+}
+.bulb:nth-child(3n){
+    background:#e3c27d;
+    box-shadow:0 0 10px #e3c27d;
+}
+#ten.swiper-slide-active .bulb:nth-child(2n){
+    animation: bulbShow1 .5s infinite;
+}
+#ten.swiper-slide-active .bulb:nth-child(2n-1){
+    animation: bulbShow2 .5s infinite;
+}
+/* ten */
+
+#eleven{
+    width: 7.5rem;
+    height: 100%;
+    position: relative;
+    flex: none;
+    background-image: url("../images/bg_10.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#eleven.swiper-slide-active .ballon1 {
+    width: 5rem;
+    height: 6.37rem;
+    background: url(../images/ballon1.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 1.25rem;
+    top: 0.58rem;
+    animation: ballon1 1.5s ease-in .5s forwards;
+    z-index: 99;
+    transform: translateY(13rem);
+}
+@keyframes ballon1 {
+    0% {
+        transform: translateY(13rem);
+    }
+    100% {
+        transform: translateY(0rem);
+    }
+}
+#eleven.swiper-slide-active .ballon2 {
+    width: 1.19rem;
+    height: 1.4rem;
+    background: url(../images/ballon2.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0.79rem;
+    top: 4.76rem;
+    animation: ballon1 1.5s ease-in;
+    z-index: 88;
+}
+
+#eleven.swiper-slide-active .ballon3 {
+    width: 0.76rem;
+    height: 0.91rem;
+    background: url(../images/ballon3.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 5.7rem;
+    top: 6.75rem;
+    z-index: 88;
+    animation: ballon1 1.5s ease-in;
+}
+
+#eleven.swiper-slide-active .ballon4 {
+    width: 0.55rem;
+    height: 0.63rem;
+    background: url(../images/ballon4.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 2.7rem;
+    top: 7.66rem;
+    z-index: 88;
+    animation: ballon1 1.5s ease-in;
+}
+
+#eleven.swiper-slide-active .ballon5 {
+    width: 1.49rem;
+    height: 1.84rem;
+    background: url(../images/ballon5.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 6rem;
+    top: 2.88rem;
+    z-index: 88;
+    animation: ballon1 1.5s ease-in;
+}
