@@ -22,20 +22,6 @@ body {
     text-align: center;
     font-size: 18px;
     background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
 }
 
 /* first */
@@ -473,3 +459,94 @@ body {
     z-index: 10;
 }
 /* third */
+@keyframes alt {
+    0% {
+        transform: translateX(-13.8rem);
+    }
+    100%{
+        transform: translateX(-7rem);
+    }
+}
+#fourbox{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#four {
+    width: 21.3rem!important;
+    height: 100%;
+    background-image: url("../images/bg_04.png");
+    background-size: 21.3rem 100%;
+    background-color: red;
+    position: relative;
+    /*transform-origin: 10.9rem 9.6rem ;*/
+    transition: all ease 3s;
+    transform: translateX(-13.8rem);
+}
+
+#fourbox.swiper-slide-active #four {
+    animation: alt 2s  cubic-bezier(0.55, 0.06, 0.68, 0.19)  forwards 1s;
+}
+
+
+.wheels {
+    width: 5.37rem;
+    height: 5.37rem;
+    border-radius: 50%;
+    position: absolute;
+    left:14.8rem;
+    top:2.9rem;
+}
+.wheels-inner{
+    width: 5.37rem;
+    height: 5.37rem;
+    position: absolute;
+    background: url("../images/wheels.png");
+    background-size: contain;
+    animation: rotates 10s linear infinite;
+    left:0;
+    top:0;
+}
+.item {
+    width: 0.64rem;
+    height: 0.64rem;
+    position: absolute;
+    left: 2.365rem;
+    top: 2.365rem;
+    background: url("../images/house.png");
+    background-size: contain;
+    z-index: 99;
+}
+
+.item:nth-of-type(1) {
+    animation: wheels1 10s linear infinite;
+}
+
+.item:nth-of-type(2) {
+    animation: wheels2 10s linear infinite;
+}
+
+.item:nth-of-type(3) {
+    animation: wheels3 10s linear infinite;
+}
+
+.item:nth-of-type(4) {
+    animation: wheels4 10s linear infinite;
+}
+
+.item:nth-of-type(5) {
+    animation: wheels5 10s linear infinite;
+}
+
+.item:nth-of-type(6) {
+    animation: wheels6 10s linear infinite;
+}
+
+.item:nth-of-type(7) {
+    animation: wheels7 10s linear infinite;
+}
+
+.item:nth-of-type(8) {
+    animation: wheels8 10s linear infinite;
+}
+/* four */
