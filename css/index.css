@@ -681,14 +681,14 @@ body {
 }
 #nine.swiper-slide-active > .lights {
     width: 4.91rem;
-    height: 0;
+    height: 4.52rem;
     background-image: url(../images/light.png);
     background-position: top center;
     background-size: 100%;
     position: absolute;
     left: 1.1rem;
     top: 5.41rem;
-    animation: lightShow 1s linear 1s forwards;
+    animation: bulbShow2 1s linear 1s forwards infinite;
 }
 
 @keyframes lightShow {
