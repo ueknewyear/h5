@@ -8,4 +8,7 @@ $(function(){
             },
         },
     });
+    var loaderbox = document.getElementsByClassName('loaderbox')[0];
+    loaderbox.style.display = 'none';
+
 });

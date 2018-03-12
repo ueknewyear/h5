@@ -679,7 +679,7 @@ body {
     background-position: center;
     background-size: cover;
 }
-#nine.swiper-slide-active > .lights {
+#nine> .lights {
     width: 4.91rem;
     height: 4.52rem;
     background-image: url(../images/light.png);
@@ -688,16 +688,31 @@ body {
     position: absolute;
     left: 1.1rem;
     top: 5.41rem;
-    animation: bulbShow2 1s linear 1s forwards infinite;
+    opacity: 0;
 }
-
+#nine.swiper-slide-active > .lights {
+    animation: ligthShow 3s linear;
+}
 @keyframes lightShow {
-    0% {
-        height: 0;
+    0%{
+        opacity:0;
     }
-    100% {
-        height: 4.52rem;
+    10%{
+        opacity: 1;
     }
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    35%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+
 }
 /* nine */
 #ten{
@@ -889,4 +904,97 @@ body {
     top: 2.88rem;
     z-index: 88;
     animation: ballon1 1.5s ease-in;
+}
+/*  load*/
+.loaderbox{
+    width: 100%;
+    height:100%;
+    background: #76dce3;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index:9999;
+}
+.loader {
+    font-size: 90px;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    /*margin: 33% auto;*/
+    /*position: relative;*/
+    -webkit-animation: load6 1.7s infinite ease;
+    animation: load6 1.7s infinite ease;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    z-index: 999;
+}
+@-webkit-keyframes load6 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.11em -0.83em 0
+        -0.42em #ffffff, -0.11em -0.83em 0 -0.44em #ffffff, -0.11em -0.83em 0
+        -0.46em #ffffff, -0.11em -0.83em 0 -0.477em #ffffff;
+    }
+    5%,
+    95% {
+        box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.11em -0.83em 0
+        -0.42em #ffffff, -0.11em -0.83em 0 -0.44em #ffffff, -0.11em -0.83em 0
+        -0.46em #ffffff, -0.11em -0.83em 0 -0.477em #ffffff;
+    }
+    30% {
+        box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.51em -0.66em 0
+        -0.42em #ffffff, -0.75em -0.36em 0 -0.44em #ffffff, -0.83em -0.03em 0
+        -0.46em #ffffff, -0.81em 0.21em 0 -0.477em #ffffff;
+    }
+    55% {
+        box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.29em -0.78em 0
+        -0.42em #ffffff, -0.43em -0.72em 0 -0.44em #ffffff, -0.52em -0.65em 0
+        -0.46em #ffffff, -0.57em -0.61em 0 -0.477em #ffffff;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.11em -0.83em 0
+        -0.42em #ffffff, -0.11em -0.83em 0 -0.44em #ffffff, -0.11em -0.83em 0
+        -0.46em #ffffff, -0.11em -0.83em 0 -0.477em #ffffff;
+    }
+}
+@keyframes load6 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.11em -0.83em 0
+        -0.42em #ffffff, -0.11em -0.83em 0 -0.44em #ffffff, -0.11em -0.83em 0
+        -0.46em #ffffff, -0.11em -0.83em 0 -0.477em #ffffff;
+    }
+    5%,
+    95% {
+        box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.11em -0.83em 0
+        -0.42em #ffffff, -0.11em -0.83em 0 -0.44em #ffffff, -0.11em -0.83em 0
+        -0.46em #ffffff, -0.11em -0.83em 0 -0.477em #ffffff;
+    }
+    30% {
+        box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.51em -0.66em 0
+        -0.42em #ffffff, -0.75em -0.36em 0 -0.44em #ffffff, -0.83em -0.03em 0
+        -0.46em #ffffff, -0.81em 0.21em 0 -0.477em #ffffff;
+    }
+    55% {
+        box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.29em -0.78em 0
+        -0.42em #ffffff, -0.43em -0.72em 0 -0.44em #ffffff, -0.52em -0.65em 0
+        -0.46em #ffffff, -0.57em -0.61em 0 -0.477em #ffffff;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.11em -0.83em 0
+        -0.42em #ffffff, -0.11em -0.83em 0 -0.44em #ffffff, -0.11em -0.83em 0
+        -0.46em #ffffff, -0.11em -0.83em 0 -0.477em #ffffff;
+    }
 }
