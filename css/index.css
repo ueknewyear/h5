@@ -691,9 +691,9 @@ body {
     opacity: 0;
 }
 #nine.swiper-slide-active > .lights {
-    animation: ligthShow 3s linear;
+    animation:  bulbShowx 3s forwards;
 }
-@keyframes lightShow {
+@keyframes bulbShowx {
     0%{
         opacity:0;
     }
@@ -710,6 +710,9 @@ body {
         opacity: 0;
     }
     40%{
+        opacity: 1;
+    }
+    100%{
         opacity: 1;
     }
 
