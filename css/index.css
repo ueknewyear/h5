@@ -463,6 +463,9 @@ body {
     0% {
         transform: translateX(-13.8rem);
     }
+    60%{
+        transform:  translateX(0);
+    }
     100%{
         transform: translateX(-7rem);
     }
@@ -485,9 +488,29 @@ body {
 }
 
 #fourbox.swiper-slide-active #four {
-    animation: alt 2s  cubic-bezier(0.55, 0.06, 0.68, 0.19)  forwards 1s;
+    animation: alt 4s  cubic-bezier(0.63, 0.29, 0.68, 0.46)  forwards 1s;
 }
-
+#four .jt{
+    position: absolute;
+    left: 47%;
+    top: 65%;
+    width: 1.36rem;
+    height: 1.10rem;
+    background-image: url(../images/jt.png);
+    background-size: cover;
+    animation: lr 1s linear infinite forwards;
+}
+@keyframes lr{
+    0%{
+        left: 47%;
+    }
+    50%{
+        left: 46%
+    }
+    100%{
+        left: 47%;
+    }
+}
 
 .wheels {
     width: 5.37rem;
